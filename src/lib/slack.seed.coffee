@@ -65,7 +65,7 @@ class Slack
       callback = options
       options = {}
 
-    options.token = @token
+    options.token = options.token || @token
 
     url = @url + method
 
